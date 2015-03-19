@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "WEM - GChrome Extension",
+  "description": "This extension pulls the tabs from your web browser",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "WEMEX.png",
+    "default_popup": "test.html",
+    "default_title": "Mnem!"
+  },
+
+  "permissions": [
+    "activeTab",
+    "bookmarks",
+    "cookies",
+    "history",
+    "location",
+    "privacy",
+    "sessions",
+    "tabCapture",
+    "tabs",
+    "webRequest",
+    "https://ajax.googleapis.com/"
+  ]
+}
