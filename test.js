@@ -14,23 +14,23 @@ function myFunction(tabTitle,tabURL,tabIcon) {
     var uList = document.getElementById("links");
     var newItem = document.createElement("li");
     var newItemLink = document.createElement("a");
-
+    var image = document.createElement("img");
     if(tabTitle.length > 20) tabTitle = tabTitle.substring(0,20);
 
     newItemLink.textContent = tabTitle;
 
-
+    image.setAttribute("src",tabIcon);
     /*
      newItemLink.setAttribute("href",tabURL);
      newItemLink.setAttribute("id", "link");
      newItemLink.image(tabIcon);
-    newItemLink.setAttribute("img src",tabIcon);*/
+    */
 
 
 
     /*not sure why this has not worked..
     also tried img src and applying both/either to newItem instead*/
-
+    newItemLink.appendChild(image);
     newItem.appendChild(newItemLink);
     uList.appendChild(newItem);
 }
