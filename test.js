@@ -20,17 +20,9 @@ function myFunction(tabTitle,tabURL,tabIcon) {
     newItemLink.textContent = tabTitle;
 
     favicon.setAttribute("src",tabIcon);
+    favicon.setAttribute("id", "link");
     newItemLink.setAttribute("href",tabURL);
-    /*
 
-     newItemLink.setAttribute("id", "link");
-     newItemLink.image(tabIcon);
-    */
-
-
-
-    /*not sure why this has not worked..
-    also tried img src and applying both/either to newItem instead*/
     newItemLink.appendChild(favicon);
     newItem.appendChild(newItemLink);
     uList.appendChild(newItem);
