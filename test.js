@@ -4,22 +4,30 @@
 
 chrome.tabs.getAllInWindow(null, function(tabs) {
     tabs.forEach(function(tab) {
-       myFunction(tab.title,tab.url,tab.icon);
+       myFunction(tab.title,tab.url,tab.favIconUrl);
     });
 });
 
 function myFunction(tabTitle,tabURL,tabIcon) {
-    console.log(tabTitle);
+    /*console.log(tabTitle);*/
 
-    var newItemLink = document.createElement("a");
     var uList = document.getElementById("links");
     var newItem = document.createElement("li");
-    newItemLink.setAttribute("id", "link")
+    var newItemLink = document.createElement("a");
+
     if(tabTitle.length > 20) tabTitle = tabTitle.substring(0,20);
 
-    newItem.textContent = tabTitle;
-    newItemLink.setAttribute("href",tabURL);
-    newItemLink.setAttribute("background:url",tabIcon);
+    newItemLink.textContent = tabTitle;
+
+
+    /*
+     newItemLink.setAttribute("href",tabURL);
+     newItemLink.setAttribute("id", "link");
+     newItemLink.image(tabIcon);
+    newItemLink.setAttribute("img src",tabIcon);*/
+
+
+
     /*not sure why this has not worked..
     also tried img src and applying both/either to newItem instead*/
 
