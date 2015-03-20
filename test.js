@@ -31,7 +31,7 @@ function myFunction(tabTitle,tabURL,tabIcon) {
 
     /*not sure why this has not worked..
     also tried img src and applying both/either to newItem instead*/
-    newItemLink.appendChild(image);
+    newItemLink.appendChild(favicon);
     newItem.appendChild(newItemLink);
     uList.appendChild(newItem);
 }
