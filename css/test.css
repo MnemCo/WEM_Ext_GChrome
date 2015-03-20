@@ -1,10 +1,15 @@
-#links {
-width: 200px;
+#list {
+width: 400px;
 height: 300px;
-
 }
-#link{
+#favicons{
     width: 16px;
     height: 16px;
-    display: block;
+    float: left;
+}
+#listItem{
+height:22px;
+}
+#link{
+    padding: 10px;
 }
